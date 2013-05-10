@@ -1,0 +1,17 @@
+#####################
+# GG Damage Changer #
+#    By  GusGold    #
+#####################
+#      Config       #
+#####################
+
+# NOTE:
+#    - Delete this file to regenerate it with default values
+#    - If values are not viable, default will be used
+#    - Delete config when updating GGDamageChanger.jar
+
+Version: 0.1
+
+# Set to FALSE to disable
+enableCactus: true
+cactusDamage: 1
