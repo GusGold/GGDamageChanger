@@ -10,7 +10,7 @@
 #    - If values are not viable, default will be used
 #    - Delete config when updating GGDamageChanger.jar
 
-Version: 0.2
+Version: 0.2.1
 checkForUpdates: true
 
 # Set [damageType]Enabled to FALSE to disable
