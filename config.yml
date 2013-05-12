@@ -10,8 +10,62 @@
 #    - If values are not viable, default will be used
 #    - Delete config when updating GGDamageChanger.jar
 
-Version: 0.1
+Version: 0.2
+checkForUpdates: true
 
-# Set to FALSE to disable
-enableCactus: true
-cactusDamage: 1
+# Set [damageType]Enabled to FALSE to disable
+
+#Damage caused when an entity contacts a block such as a Cactus.
+#Default Damage: 1 per damage tick
+contactEnabled: true
+contactDamage: 1
+
+#Damage caused by running out of air while in water.
+#Default Damage: 1 per 0.5 seconds
+drowningEnabled: true
+drowningDamage: 1
+
+#Damage caused when a player falls a distance greater than 3 blocks.
+#Default Damage: 1 per block fall after first 3 blocks
+fallEnabled: true
+fallDamage: 1
+
+#Damage caused by direct exposure to fire.
+#Default Damage: 1 per damage tick 
+fireEnabled: true
+fireDamage: 1
+
+#Damage caused due to burns caused by fire and lava
+#Default Damage: 1 per damage tick
+fire_tickEnabled: true
+fire_tickDamage: 1
+
+#Damage caused by direct exposure to lava.
+#Default Damage: 4 per damage tick
+lavaEnabled: true
+lavaDamage: 4
+
+#Damage caused by being struck by lightning.
+#Default Damage: 5 per strike 
+lightningEnabled: true
+lightningDamage: 5
+
+#Damage caused due to an ongoing poison effect.
+#Default Damage: 1 per damage tick
+poisonEnabled: true
+poisonDamage: 1
+
+#Damage caused by starving due to having an empty hunger bar.
+#Default Damage: 1 per hunger tick
+starvationEnabled: true
+starvationDamage: 1
+
+#Damage caused by being put in a block.
+#Default Damage: 1 per 0.5 seconds
+suffocationEnabled: true
+suffocationDamage: 1
+
+#Damage caused by falling into the void.
+#Default Damage: 4 per 0.5 seconds 
+voidEnabled: true
+voidDamage: 4
