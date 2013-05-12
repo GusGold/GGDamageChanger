@@ -1,3 +1,6 @@
+V 0.2.1
+  * Apparently Bukkit wants to limit as much server traffic as possible, even rss feeds...
+
 V 0.2:
   + Added all Damage types
   + [BUG] Poison will kill if damage value is > 1
