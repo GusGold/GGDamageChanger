@@ -6,7 +6,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class GGDamageChanger extends JavaPlugin implements Listener {
-  public String[] jarVersion = {"0.2"};
+  public String[] jarVersion = {"0.2","0.2.1"};
 	public int contactDamage,  drowningDamage, fallDamage, fireDamage, fire_tickDamage, lavaDamage, lightningDamage, poisonDamage, starvationDamage, suffocationDamage, voidDamage;
 	public boolean contactEnabled, drowningEnabled, fallEnabled, fireEnabled, fire_tickEnabled, lavaEnabled, lightningEnabled, poisonEnabled, starvationEnabled, suffocationEnabled, voidEnabled;
 	protected UpdateChecker updateChecker;
@@ -18,7 +18,7 @@ public final class GGDamageChanger extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable(){
 		this.updateChecker = new UpdateChecker(this, "http://dev.bukkit.org/server-mods/ggdamagechanger/files.rss");
-		if (this.updateChecker.updateNeeded() && getConfig().getBoolean("checkForUpdates")){
+		if (getConfig().getBoolean("checkForUpdates") && this.updateChecker.updateNeeded()){
 			getLogger().info("A new version is available: "+this.updateChecker.getVersion());
 			getLogger().info("Get it from: " + this.updateChecker.getLink());
 		}
